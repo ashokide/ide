@@ -16,33 +16,55 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row vh-100 p-3">
-            <section class="col-lg-6 col-12 h-100">
-                <header class="h-50">
-                    <h4 class="lead text-center text-white fw-bolder">HTML EDITOR</h4>
-                    <div class="bg-white h-75" id="htmleditor" contenteditable="true" tabindex="-1" onkeyup="editor()">
-                    </div>
-                </header>
-                <footer tabindex="-1" class="row h-50">
-                    <div class="col-lg-6">
-                        <h4  class="lead text-center text-white fw-bolder">CSS EDITOR</h4>
-                        <div class="bg-white h-75" id="csseditor" contenteditable="true" tabindex="-1" onkeyup="editor()">
-    
+        <div class="row vh-100">
+            <div class="col-lg-6 col-12 px-5 py-1 d-flex flex-column justify-content-center">
+                <div style="min-height: 150px;">
+                    <div class="card m-3">
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">HTML EDITOR</h5>
+                        </div>
+                        <div class="card-body" style="min-height: 150px;max-height: 150px;overflow-y: auto;">
+                            <div class="bg-white" id="htmleditor" contenteditable="true" tabindex="-1"
+                                onkeyup="editor()">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h4  class="lead text-center text-white fw-bolder">JS EDITOR</h4>
-                        <div class="bg-white h-75" id="jseditor" contenteditable="true" tabindex="-1" onkeyup="editor()">
-    
+                </div>
+
+                <div style="min-height: 150px">
+                    <div class="card m-3">
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">CSS EDITOR</h5>
+                        </div>
+                        <div class="card-body" style="min-height: 150px;max-height: 150px;overflow-y: auto;"">
+
+                            <div class="bg-white" id="csseditor" contenteditable="true" tabindex="-1"
+                                onkeyup="editor()">
+                            </div>
                         </div>
                     </div>
-                </footer>
-            </section>
-            <section class="col-lg-6 col-12 h-100 position-relative" id="right">
-                <h4  class="lead text-center text-white fw-bolder m-4">Live Preview</h4>
-                <iframe frameborder="0" id="preview" class="bg-white h-75 w-100"></iframe>
-                <h4 class="text-center text-white position-absolute fixed-bottom mb-lg-5">Made with <span class="text-danger">&hearts;</span> by Ashok</h4>
-            </section>
+                </div>
+
+                <div style="min-height: 150px">
+                    <div class="card m-3">
+                        <div class="card-footer">
+                            <h5 class="card-title text-center">JS EDITOR</h5>
+                        </div>
+                        <div class="card-body" style="min-height: 150px;max-height: 150px;overflow-y: auto;">
+
+                            <div class="bg-white" id="jseditor" contenteditable="true" tabindex="-1" onkeyup="editor()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-12 p-3 vh-100 d-flex flex-column justify-content-evenly">
+                <h4 class="lead text-center text-white fw-bolder">Live Preview</h4>
+                <iframe frameborder="0" id="preview" class="bg-white w-100 h-75 rounded rounded-3 shadow-sm"></iframe>
+                <h4 class="text-center text-white mb-lg-5 ">Made with <span
+                        class="text-danger">&hearts;</span> by Ashok</h4>
+            </div>
         </div>
     </div>
     <script src="./app.js"></script>
