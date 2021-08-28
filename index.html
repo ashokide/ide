@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Editor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <section class="leftsection">
+            <header>
+                <h4>HTML EDITOR</h4>
+                <div class="editor" id="htmleditor" contenteditable="true" tabindex="-1" onkeyup="editor()">
+
+                </div>
+            </header>
+            <footer tabindex="-1">
+                <div class="left">
+                    <h4>CSS EDITOR</h4>
+                    <div class="editor" id="csseditor" contenteditable="true" tabindex="-1" onkeyup="editor()">
+
+                    </div>
+                </div>
+                <div class="right">
+                    <h4>JS EDITOR</h4>
+                    <div class="editor" id="jseditor" contenteditable="true" tabindex="-1" onkeyup="editor()">
+
+                    </div>
+                </div>
+            </footer>
+
+        </section>
+        <section class="rightsection">
+            <h4>Live Preview</h4>
+            <iframe frameborder="0" class="preview" tabindex="-1" height="100%" width="100%">
+
+            </iframe>
+            <h2 style="text-align: center; background-color: darkblue; color: white;">Made with <span style="color: crimson;">&hearts;</span> by Ashok</h2>
+        </section>
+    </main>
+    <script src="./app.js"></script>
+</body>
+
+</html>
